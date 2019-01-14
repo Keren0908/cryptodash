@@ -1,28 +1,19 @@
 import React, { Component } from 'react';
 import styled,{css} from 'styled-components';
 
+import AppLayout from './AppLayout';
 import './App.css';
 
 import Welcome from './WelcomeMessage';
 
-const MyButton = styled.div`
-  color: green;
-
-  ${props => props.primary && css`
-    background: white;
-    color: palevioletred;
-  `}
-  `;
 
 
 class App extends Component {
   render() {
     return (
-      <div>
+      <AppLayout>
         <Welcome/>
-        <MyButton>Hello</MyButton>
-        <MyButton primary>Hello</MyButton>
-      </div>
+      </AppLayout>
     );
   }
 }
