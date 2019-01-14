@@ -4,6 +4,7 @@ import styled,{css} from 'styled-components';
 import AppLayout from './AppLayout';
 import './App.css';
 
+import {AppProvider} from './AppProvider';
 import Welcome from './WelcomeMessage';
 import AppBar from './AppBar';
 
@@ -13,8 +14,10 @@ class App extends Component {
   render() {
     return (
       <AppLayout>
-        <AppBar />
-        <Welcome/>
+        <AppProvider>
+          <AppBar />
+          <Welcome/>
+        </AppProvider>
       </AppLayout>
     );
   }
