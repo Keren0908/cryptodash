@@ -7,6 +7,7 @@ import {AppProvider} from './AppProvider';
 import AppBar from './AppBar';
 import Settings from '../Settings';
 import Content from '../Shared/Content';
+import Dashboard from '../Dashboard';
 
 
 
@@ -18,6 +19,7 @@ class App extends Component {
           <AppBar />
           <Content>
             <Settings />
+            <Dashboard />
           </Content>
         </AppProvider>
       </AppLayout>
