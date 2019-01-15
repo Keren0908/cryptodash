@@ -12,8 +12,7 @@ export const CoinGridStyled = styled.div`
 
 function getLowerSectionCoins(filteredCoins,coinList){
     //console.log(coinList);
-    return filteredCoins && Object.keys(filteredCoins) ||
-         Object.keys(coinList).slice(0, 100);
+    return filteredCoins && Object.keys(filteredCoins) || Object.keys(coinList).slice(0, 100);
 }
 
 function getCoinsToDisplay(coinList, topSection, favorites, filteredCoins){
